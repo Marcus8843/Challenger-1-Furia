@@ -2,6 +2,19 @@
 {% load static %}
 
 {% block content %}
+
+<!-- Seção Quem Somos -->
+<section id="quem-somos" class="quem-somos">
+    <div class="quem-somos-content">
+        <h1>Quem Somos</h1>   
+        <h2>Somos FURIA.</h2>
+        <p>Uma organização de esports que nasceu do desejo de representar o Brasil no CS e conquistou muito mais que isso: expandimos nossas ligas, disputamos os principais títulos, adotamos novos objetivos e ganhamos um propósito maior. Somos muito mais que o sucesso competitivo.</p>
+        <p>Somos um movimento sociocultural.</p>
+        <p>Nossa história é de pioneirismo, grandes conquistas e tradição. Nosso presente é de desejo, garra e estratégia. A pantera estampada no peito estampa também nosso futuro de glória. Nossos pilares de performance, lifestyle, conteúdo, business, tecnologia e social são os principais constituintes do movimento FURIA, que representa uma unidade que respeita as individualidades e impacta positivamente os contextos em que se insere. Unimos pessoas e alimentamos sonhos dentro e fora dos jogos.</p>
+    </div>
+</section>
+
+<!-- Seção Hero -->
 <section class="hero" style="background-image: url('{% static 'core/images/team-bg.jpg' %}')">
     <div class="hero-overlay"></div>
     <div class="container">
@@ -11,7 +24,6 @@
     </div>
 </section>
 
-{% include 'core/team.html' %}
-{% include 'core/matches.html' %}
-{% include 'core/shop.html' %}
-{% endblock %} 
+
+<!-- Seções Importadas -->
+{% endblock %}
