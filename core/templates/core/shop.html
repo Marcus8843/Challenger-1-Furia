@@ -1,0 +1,19 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section id="shop" class="shop-section">
+    <div class="container">
+        <h2>LOJA OFICIAL</h2>
+        <div class="products-grid">
+            {% for product in products %}
+            <div class="product-card">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                <h3>{{ product.name }}</h3>
+                <p class="price">R$ {{ product.price }}</p>
+                <a href="#" class="hq-button">COMPRAR</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

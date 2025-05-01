@@ -1,0 +1,21 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section id="team" class="team-section">
+    <div class="container">
+        <h2>NOSSO TIME</h2>
+        <div class="players-grid">
+            {% for player in players %}
+            <div class="player-card">
+                <img src="{{ player.photo.url }}" alt="{{ player.nickname }}">
+                <h3>{{ player.nickname }}</h3>
+                <p>{{ player.role }}</p>
+                <div class="player-stats">
+                    <span>Rating: {{ player.rating }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

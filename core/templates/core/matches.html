@@ -1,0 +1,25 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section id="matches" class="matches-section">
+    <div class="container">
+        <h2>PRÓXIMAS PARTIDAS</h2>
+        <div class="matches-grid">
+            {% for match in matches %}
+            <div class="match-card">
+                <div class="teams">
+                    <span>FURY</span>
+                    <span>VS</span>
+                    <span>{{ match.opponent }}</span>
+                </div>
+                <div class="match-info">
+                    <span>{{ match.tournament }}</span>
+                    <span>{{ match.date|date:"d/m/Y H:i" }}</span>
+                </div>
+                <a href="{{ match.stream_link }}" class="hq-button">ASSISTIR</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

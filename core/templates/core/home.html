@@ -1,0 +1,17 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="hero" style="background-image: url('{% static 'core/images/team-bg.jpg' %}')">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <h2>DOMINE O JOGO</h2>
+        <p>Equipe profissional de Counter-Strike competindo no mais alto nível</p>
+        <a href="#matches" class="hq-button large-button">PRÓXIMAS PARTIDAS</a>
+    </div>
+</section>
+
+{% include 'core/team.html' %}
+{% include 'core/matches.html' %}
+{% include 'core/shop.html' %}
+{% endblock %} 
