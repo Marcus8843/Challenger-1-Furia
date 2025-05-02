@@ -1,20 +1,50 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FURY Esports | {% block title %}{% endblock %}</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      FURY Esports |{% block title %}
+      {% endblock %}
+    </title>
     {% load static %}
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}" />
+  </head>
+  <body>
     {% include 'core/includes/header.html' %}
     <main>
-        {% block content %}
-        {% endblock %}
+      {% block content %}
+
+      {% endblock %}
     </main>
+    <button onclick="toggleModal()" class="float-btn">COMUNIDADE FURIA</button>
+    <div id="menuModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="toggleModal()">&times;</span>
+        <h3>Escolha uma opção:</h3>
+        <ul>
+          <li>
+            <a href="/matches">💬 Chat Fúria</a>
+          </li>
+          <li>
+            <ul>
+              <li>
+              <img src="{% static 'core/images/twitch.jpg' %}" alt="twitch" width="30" height="30"> <a href="https://www.twitch.tv/furia" target="_blank">Twitch</a>
+              </li>
+              <li>
+                <img src="{% static 'core/images/yt.png' %}" alt="twitch" width="30" height="30"> <a href="https://www.youtube.com/@furiagg" target="_blank">YouTube</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img src="{% static 'core/images/wt.png' %}" alt="twitch" width="30" height="30"> <a href="https://wa.me/5511993404466" target="_blank">WhatsApp da Comunidade</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     {% include 'core/includes/footer.html' %}
     <script src="{% static 'core/js/main.js' %}"></script>
-</body>
+  </body>
 </html>
