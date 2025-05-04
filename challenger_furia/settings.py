@@ -3,8 +3,10 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-004=m_1pyp-67f#co==yccgr115cg%d$d&zu2j#wjnis@9caxi'
-DEBUG = True
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dev-secret-key')
+
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+
 ALLOWED_HOSTS = ['*']  # para testes locais. Em produção, use domínios específicos
 
 INSTALLED_APPS = [
