@@ -14,64 +14,53 @@ Ele se encontra na Master Branch. Abaixo, segue o passo a passo para executa-lo 
 
 Challenger-1-Furia/
 ├── challenger_furia/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
+│ ├── init.py
+│ ├── asgi.py
+│ ├── settings.py
+│ ├── urls.py
+│ └── wsgi.py
 ├── core/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── migrations/
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
+│ ├── init.py
+│ ├── admin.py
+│ ├── apps.py
+│ ├── migrations/
+│ │ └── init.py
+│ ├── models.py
+│ ├── tests.py
+│ └── views.py
 ├── staticfiles/
-│   └── admin/
+│ └── admin/
 ├── db.sqlite3
 └── manage.py
 
 Descrição dos componentes:
 
-* **challenger\_furia/**: Estrutura Principal com todos arquivos.
+challenger\_furia/: Estrutura Principal com todos arquivos.
 
-  * `__init__.py`: Indica que este diretório é um pacote Python.
-  * `asgi.py`: Configuração para a interface ASGI, usada para deploys assíncronos.
-  * `settings.py`: Arquivo de configurações do projeto.
-  * `urls.py`: Define as rotas principais do projeto.
-  * `wsgi.py`: Configuração para a interface WSGI, usada para deploys síncronos.
-
-* **core/**: Aplicação principal do projeto.
-
-  * `__init__.py`: Indica que este diretório é um pacote Python.
-  * `admin.py`: Configurações para o painel administrativo do Django.
-  * `apps.py`: Configurações da aplicação.
-  * `migrations/`: Diretório que armazena os arquivos de migração do banco de dados.
-
-    * `__init__.py`: Indica que este diretório é um pacote Python.
-  * `models.py`: Definição dos modelos de dados.
-  * `tests.py`: Testes automatizados da aplicação.
-  * `views.py`: Lógica das views da aplicação.
-
-* **staticfiles/**: Diretório para arquivos estáticos (CSS, JavaScript, imagens).
-
-  * `admin/`: Arquivos estáticos relacionados ao painel administrativo do Django.
-
-* **db.sqlite3**: Banco de dados SQLite utilizado pelo projeto.
-
-* **manage.py**: Script de gerenciamento do Django, utilizado para executar comandos administrativos.
+  * __init__.py: Indica que este diretório é um pacote Python.
+  * asgi.py: Configuração para a interface ASGI, usada para deploys assíncronos.
+  * settings.py: Arquivo de configurações do projeto.
+  * urls.py: Define as rotas principais do projeto.
+  * wsgi.py: Configuração para a interface WSGI, usada para deploys síncronos.
+  * core/: Aplicação principal do projeto.
+  * admin.py: Configurações para o painel administrativo do Django.
+  * apps.py: Configurações da aplicação.
+  * migrations/: Diretório que armazena os arquivos de migração do banco de dados.
+  * models.py: Definição dos modelos de dados.
+  * tests.py: Testes automatizados da aplicação.
+  * views.py: Lógica das views da aplicação.
+  * staticfiles/: Diretório para arquivos estáticos (CSS, JavaScript, imagens).
+  * admin/: Arquivos estáticos relacionados ao painel administrativo do Django.
+  * db.sqlite3: Banco de dados SQLite utilizado pelo projeto.
+  * manage.py: Script de gerenciamento do Django, utilizado para executar comandos administrativos.
 
 🚀 Como Executar!!
-
-    Clone o repositório:
-
-git clone https://github.com/Marcus8843/Challenger-1-Furia.git
+Execute o seguinte comando no terminal:
+`git clone https://github.com/Marcus8843/Challenger-1-Furia.git`
 
 Navegue até o diretório do projeto:
 
-cd Challenger-1-Furia
+`cd Challenger-1-Furia`
 
 Instale as dependências:
 
